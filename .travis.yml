@@ -80,5 +80,6 @@ script:
 #    whose output needs to compared to the results from the feature branch (the trapdoor
 #    tests). Finally, it compares the outputs of both branches to check for regressions.
  #- tools/qa/test_all_twobranches.sh
- - ls
+ - ls -R
+ - cached/cppcheck-1.72
  - ${CACHED}/${NAMEVER} --version
