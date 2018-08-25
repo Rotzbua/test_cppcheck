@@ -38,5 +38,5 @@ install:
 
 script:
  - ls -R
- - cd $HOME && ls -R
- - ${CACHED}/${NAMEVER}/cppcheck --version
+ #- cd $HOME && ls -R
+ - ./${CACHED}/${NAMEVER}/cppcheck --version
