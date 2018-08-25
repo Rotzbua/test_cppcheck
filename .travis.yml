@@ -32,6 +32,7 @@ env:
 cache:
   directories:
     - $HOME/cached
+    - ./cached
 
 install:
   - bash ./cppcheck.sh
