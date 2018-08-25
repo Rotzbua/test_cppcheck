@@ -31,7 +31,6 @@ env:
 
 cache:
   directories:
-    - $HOME/cached
     - ./cached
 
 install:
