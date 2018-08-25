@@ -10,7 +10,7 @@ RED='\e[0;31m'
 RESET='\e[0m'
 
 # Fix directories related to caching
-export CACHED=./cached
+export CACHED=$HOME/cached 
 mkdir -p ${CACHED}
 
 if [ ! -f "${CACHED}/${NAMEVER}/cppcheck" ]; then
