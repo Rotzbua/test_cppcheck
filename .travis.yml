@@ -15,6 +15,7 @@ addons:
      #- libhdf5-serial-dev
      # libtool is needed by libint
      #- libtool
+     # libstdc++6 is needed to build a recent cppcheck
      - libstdc++6
      # libpcre3-dev is needed to build a recent cppcheck
      - libpcre3-dev
