@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-export VERSION=1.73
-export NAMEVER=cppcheck-${VERSION}
+NAMEVER=cppcheck-${VERSION}
 set -e
 #source tools/qa/common.sh
 # Some colors
@@ -10,7 +9,6 @@ RED='\e[0;31m'
 RESET='\e[0m'
 
 # Fix directories related to caching
-export CACHED=$HOME/cached 
 mkdir -p ${CACHED}
 
 if [ ! -f "${CACHED}/${NAMEVER}/cppcheck" ]; then
