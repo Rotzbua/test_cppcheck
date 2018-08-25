@@ -29,9 +29,9 @@ env:
      - CC="gcc-6"
      - FC="gfortran-6"
 
-#cache:
-#  directories:
-#    - $HOME/qaworkdir/cached
+cache:
+  directories:
+    - $HOME/cached
 
 install:
   - bash ./cppcheck.sh
@@ -80,4 +80,5 @@ script:
 #    whose output needs to compared to the results from the feature branch (the trapdoor
 #    tests). Finally, it compares the outputs of both branches to check for regressions.
  #- tools/qa/test_all_twobranches.sh
- - exit()
+ - ls
+ - ${CACHED}/${NAMEVER} --version
