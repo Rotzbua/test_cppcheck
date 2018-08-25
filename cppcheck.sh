@@ -17,7 +17,7 @@ if [ ! -f "${CACHED}/${NAMEVER}/cppcheck" ]; then
     cd ${QAWORKDIR}
     mkdir -p depbuild
     cd depbuild
-    curl -OL "https://downloads.sourceforge.net/project/cppcheck/cppcheck/${VERSION}/${NAMEVER}.tar.bz2"
+    curl -OL "http://downloads.sourceforge.net/project/cppcheck/cppcheck/${VERSION}/${NAMEVER}.tar.bz2"
     tar -xjf ${NAMEVER}.tar.bz2
     cd ${NAMEVER}
     echo "Actual build and install. This may take a while."
