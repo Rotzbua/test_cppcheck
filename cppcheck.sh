@@ -17,6 +17,7 @@ if [ ! -f "${CACHED}/${NAMEVER}/cppcheck" ]; then
     cd ${QAWORKDIR}
     mkdir -p depbuild
     cd depbuild
+    # https do not work, maybe cert problem with travis
     curl -OL "http://downloads.sourceforge.net/project/cppcheck/cppcheck/${VERSION}/${NAMEVER}.tar.bz2"
     tar -xjf ${NAMEVER}.tar.bz2
     cd ${NAMEVER}
