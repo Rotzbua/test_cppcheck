@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-VERSION=1.73
-NAMEVER=cppcheck-${VERSION}
+export VERSION=1.73
+export NAMEVER=cppcheck-${VERSION}
 set -e
 #source tools/qa/common.sh
 # Some colors
@@ -32,3 +32,5 @@ if [ ! -f "${CACHED}/${NAMEVER}/cppcheck" ]; then
 else
     echo -e "${GREEN}Using Cached ${NAMEVER}${RESET}"
 fi
+
+${CACHED}/${NAMEVER}/cppcheck --version
