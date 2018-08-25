@@ -11,8 +11,8 @@ addons:
     packages:
      - gcc-6
      - g++-6
-     - gfortran-6
-     - libhdf5-serial-dev
+     #- gfortran-6
+     #- libhdf5-serial-dev
      # libtool is needed by libint
      - libtool
      # libpcre3-dev is needed to build a recent cppcheck
@@ -34,7 +34,7 @@ env:
 #    - $HOME/qaworkdir/cached
 
 install:
-  - bash cppcheck.sh
+  - bash ./cppcheck.sh
 # Install all required python packages for HORTON and for testing with pip.
 # - tools/qa/install_deps_pip.sh
 
