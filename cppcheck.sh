@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# source
+# https://github.com/theochem/horton/issues/72
+
 NAMEVER=cppcheck-${VERSION}
 set -e
 #source tools/qa/common.sh
