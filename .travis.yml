@@ -28,10 +28,13 @@ env:
      - CXX="g++-6"
      - CC="gcc-6"
      - FC="gfortran-6"
+     - VERSION=1.73
+     - NAMEVER=cppcheck-${VERSION}
+     - CACHED=$HOME/cached 
 
 cache:
   directories:
-     - $HOME/cached
+     - $CACHED
      
 install:
   - bash ./cppcheck.sh
@@ -39,4 +42,5 @@ install:
 script:
  - ls -R
  #- cd $HOME && ls -R
- - ./${CACHED}/${NAMEVER}/cppcheck --version
+ - ${CACHED}/${NAMEVER}/cppcheck --version
+ 
